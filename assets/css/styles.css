@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	background-color: #404040;
+	padding-top: 
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: #202020;
+	text-decoration: none;
+	font: normal 20px Calibri;
+}
+
+a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1024px;
+}
+
+.logo{
+	margin-top: 50px;
+	width: 100%;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+}
+
+.myWork{
+	width: 100%;
+	border-top: 1px solid #353535;
+	margin-top: 50px;
+	background-image: url('../img/borderShade.png');
+	background-repeat: repeat-x;
+	height: 3px;	
+	padding: 20px;
+}
