@@ -1,0 +1,388 @@
+/* Core & reset
+===================================================================================*/
+body{
+	padding-top: 50px;
+    background-color: #222;
+    font-family: Calibri;
+    color: #333;
+    letter-spacing: 0px;
+}
+
+div, ul, p, h1, h2, img {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+.appBgColor {
+    background-color: #CC3300;
+}
+
+.appFontColor {
+    color: #CC3300;
+}
+
+.appBorderColor {
+    border-color: #CC3300;
+}
+
+/* clearfix for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* clearfix for others */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 780px;
+}
+
+.topBorder {
+    width: 100%;    
+    height: 20px;
+    background-image: url('../img/stripes.png');
+}
+
+/* Application specific
+===================================================================================*/
+
+/* Top section. Header, personal info
+======================================================*/
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.portraitContainer {
+    float: left;
+    border: 0px solid red;
+    padding: 10px;
+    background-color: #fcfcfc;
+    border: 1px solid #e1e1e1;
+}
+
+.personalInfoContainer {
+    float: left;
+    border: 0px solid red;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+    .personalInfoContainer > div:nth-child(1) {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .personalInfoContainer > div:nth-child(2) {
+        float: right;
+        margin-top: 32px; /* If you want the bottom of the contact information align to the bottom of the portrait: Change this to [portrait height] - 128px*/
+    }
+
+.contactItem {
+    padding: 4px;
+}
+
+/* Main body
+======================================================*/
+
+.mainBody {
+    background-image: url('../img/shadow.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e1e1;
+}
+
+.section {
+    padding: 20px 40px 0px 40px;
+}
+
+.sectionHeader {
+	width: 260px;
+	position: relative;
+	left: -60px;
+	background-image: URL('../img/headerEdge.png');
+	background-repeat: no-repeat;
+	padding: 20px 0px 0px 40px;
+    border-bottom-right-radius: 15px;
+}
+
+    .sectionHeader h2 {
+        color: #ffffff;
+        line-height: 40px;
+    }
+
+.sectionBody {
+    width: 100%;
+    margin-top: 20px;    
+}
+
+.sectionItem {
+    margin-top: 40px;
+}
+
+/* Item header, top info */
+.itemHeader {
+    width: 100%;
+    background-image: url('../img/whiteStripes.png');
+    padding: 10px;
+}
+
+    .itemHeader .itemTitle {
+        float: left;
+    }
+
+    .itemHeader .itemInfo {
+        float: right;
+    }
+
+        .itemHeader span {
+            display: block;
+        }
+
+/* Item body, content */
+.itemBody {
+    padding: 10px;
+}
+
+    .itemBody div {
+        float: right;
+        max-width: 500px;
+        margin-left: 15px;
+    }
+
+    .itemBody ul {
+        float: left;
+        letter-spacing: 0px;
+    }
+
+    .itemBody p {
+        display: block;
+        margin-left: 15px;
+        letter-spacing: 0px;
+    }
+
+/* Skills, additional info */
+.skill, .addInfo {
+    margin-bottom: 25px;
+}
+
+    .skill h2, .addInfo h2 {
+        color: #646464;
+    }
+
+.skillRatingBox {
+    width: 340px;
+    height: 20px;
+    border: 1px solid #e1e1e1;
+    background-color: #fcfcfc;
+    margin-top: 5px;
+}
+
+[class*="skillLevel"] {
+    background-image: url('../img/skillOverlay.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 20px;
+    padding-left: 10px;    
+    color: #ffffff;
+}
+
+.addAnswear {
+    padding: 5px;
+    border-bottom-right-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.skillLevel10 {
+    width: 60px;    
+    content: "10%";
+}
+
+    .skillLevel10:after {
+        content: "10%";
+    }
+
+.skillLevel20 {
+    width: 90px;    
+}
+
+    .skillLevel20:after {
+        content: "20%";
+    }
+
+.skillLevel30 {
+    width: 120px;    
+}
+
+    .skillLevel30:after {
+        content: "30%";
+    }
+
+.skillLevel40 {
+    width: 150px;    
+}
+
+    .skillLevel40:after {
+        content: "20%";
+    }
+
+.skillLevel50 {
+    width: 180px;    
+}
+
+    .skillLevel50:after {
+        content: "50%";
+    }
+
+.skillLevel60 {
+    width: 210px;    
+}
+
+    .skillLevel60:after {
+        content: "60%";
+    }
+
+.skillLevel70 {
+    width: 240px;    
+}
+
+    .skillLevel70:after {
+        content: "70%";
+    }
+
+.skillLevel80 {
+    width: 270px;    
+}
+
+    .skillLevel80:after {
+        content: "80%";
+    }
+
+.skillLevel90 {
+    width: 300px;    
+}
+
+    .skillLevel90:after {
+        content: "90%";
+    }
+
+.skillLevel100 {
+    width: 330px;    
+}
+
+    .skillLevel100:after {
+        content: "100%";
+    }
+
+/* Buisness card
+======================================================*/
+.businessCard{
+	display: block;	
+	background-color: #f1f1f1;
+	border-top-width: 6px;
+    border-top-style: solid;
+	position: fixed;
+	left: 25px;
+	top: 25px;
+	display: none;
+    padding: 10px;
+}
+
+    .businessCard h2{
+	    font-size: 20px;
+	    margin: 5px 0px 0px 5px;
+	    display: block;
+	    line-height: 18px;
+    }
+
+    .businessCard h3{
+	    font-size: 12px;
+	    margin: 4px 0px 0px 5px;
+	    display: block;
+	    line-height: 10px;
+    }
+
+    .businessCard span{
+	    font-size: 14px;
+	    margin-left: 5px;
+	    line-height: 20px;
+        display: block;
+        clear: left;
+    }
+
+    .businessCard p {
+            font-size: 14px;
+	        margin-left: 5px;
+            float: left;
+            display: inline;
+        }
+
+    .businessCard a{
+	    font-size: 14px;
+	    margin-left: 5px;
+    }
+
+    .businessCard .delimiter{
+	    border-bottom: 1px solid #ffffff;
+	    border-top: 1px solid #e1e1e1;
+	    margin: 10px 0px 10px 0px
+    }
+
+.colorPicker {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000000;
+    background-color: #555555;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-image: url('../img/colorpicker.png');
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+    .colorPicker:hover {
+        cursor: pointer;
+    }

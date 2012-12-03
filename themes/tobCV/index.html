@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Meta Data ===================================================================================-->
+	<!-- =============================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" /> 
+	<!-- Stylesheets =================================================================================-->
+	<!-- =============================================================================================-->
+	<link href="assets/external/tobPlugins/tobtimelineJS/css/style.css" rel="stylesheet" />    
+	<link href="assets/css/Styles.css" rel="stylesheet" title="app" />
+    <link href="assets/css/print-styles.css" rel="stylesheet" type="text/css" media="print">
+    <link href="assets/external/tobPlugins/tobPopoverJS/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/external/colorpicker/css/colorpicker.css" />
+    <!-- Page title ==================================================================================-->
+	<!-- =============================================================================================-->
+    <title>George Washington - Curicum Vitale</title>
+</head>
+<body>
+
+        <!--Container for all content-->
+        <div class="container">
+
+            <!--Colored top border-->
+            <div class="topBorder appBgColor lightStripes"></div>
+
+            <!--Header-->
+            <div class="header clearfix">
+                <div class="portraitContainer">
+                    <!--Portrait goes here-->
+                    <!--Replace portrait.png in assets/img/ with your own image-->
+                    <img src="assets/img/portrait.png" alt="Portrait" />
+                </div>
+
+                <!--Personal info-->
+                <!--Fill in your own personal info-->
+                <div class="personalInfoContainer">
+                    <div>
+<!--Name-->             <h1>George Washington</h1>
+<!--Title-->            <h2>PRESIDENT CANDIDATE</h2>
+                    </div>
+                    <div>
+                        <div class="contactItem">
+<!--Web page-->			<strong>Web: </strong><a href="#">myHomepage.com</a>
+				        </div>
+				        <div class="contactItem">
+<!--Mail-->				<strong>Mail: </strong><a href="mailto:george.washington@myHomepage.com">george.washington@myHomepage.com</a>
+				        </div>
+				        <div class="contactItem">
+<!--Phone-->			<strong>Phone: </strong><span>+46 (0)72 - 555 444 33</span>
+				        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Main body-->
+            <!--Here goes the rest of the document such as profile, education, employments, skills and additional info-->
+            <div class="mainBody">
+
+                <!--Profile section-->
+                <div class="section">
+                    <div class="sectionHeader appBgColor"><h2>Profile</h2></div>
+                    <div class="sectionBody">                        
+<!--Intro text-->       <p>As you understand, I am not George Washington, niether am I a president candidate. What I do am is a Web developer and front end development is a great passion of mine. I love patterns and methods which brings order to the Web chaos! Hope you like this template and in case you buy it I will do anything to support you.</p><br />
+                        <p>This template is built using standard HTML and CSS. Business card showing in the upper left corner when scrolling down is just a few lines of jQuery. </p><br />
+                        <ul>
+                            <li>Easy customizable HTML and CSS</li>
+                            <li>Business card fade in/out using jQuery</li>
+                            <li>Scroll over reference link to see popover business card</li>
+                            <li> Click reference link to glue popover</li>
+                            <li>Mark up your education and employment dates with a few custom HTML attributes and the data-timeline jQuery plugin is there for you</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Work experience section-->
+                <div class="section">
+                    <div class="sectionHeader appBgColor"><h2>Work experience</h2></div>
+                    <div class="sectionBody">
+
+                        <!--Item for work experience and education-->
+                        <!--Add data-timeline attributes if you want to use the data-timeline-->
+                        <div class="sectionItem" data-timeline="Work2" data-timeline-start-date="1789;4"  data-timeline-end-date="1797;6">
+                            <div class="itemHeader clearfix">
+                                <div class="itemTitle">
+<!--Title-->                        <h2 class="appFontColor">President</h2>
+<!--Company/education-->            <span>United states of America</span>
+                                </div>
+                                <div class="itemInfo">
+<!--Period-->                       <span><b>Period: </b>April 1789 - June 7897</span>
+<!--Type-->                         <span><b>Type: </b>Full time</span>
+                                    <!--The id you're giving the <a> tag is the same id you have to referenceif you want to use the popover-plugin in Main.js. Read more in the documentation-->
+<!--Reference-->                    <span><b>Reference: </b><a href="#" id="Napoleon">Napoleon</a></span>
+                                </div>
+                            </div>
+                            <div class="itemBody clearfix"> 
+                                <!--List of employment/education main point. Just remove the ul and li tags if you don't want this-->                       
+<!--Main points-->              <ul>
+                                    <li>Speeches</li>
+                                    <li>Negotiations</li>
+                                    <li>War Strategy</li>
+                                </ul>
+                                <div>
+<!--Job/Education description-->    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium interdum lectus, id cursus lectus volutpat ut. Curabitur gravida convallis mollis. Integer id elit eu nisi aliquet malesuada eget ac felis. Phasellus non nisi nec felis eleifend dignissim</p>                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Another work experience item, just append more like this to fullfill your resumé-->
+                        <div class="sectionItem"  data-timeline="Work1" data-timeline-start-date="1755;4" data-timeline-end-date="1789;3">
+                            <div class="itemHeader clearfix">
+                                <div class="itemTitle">
+                                    <h2 class="appFontColor">Commander in Chief</h2>
+                                    <span>Virginia</span>
+                                </div>
+                                <div class="itemInfo">
+                                    <span><b>Period: </b>April 1755 - Mars 1789</span>
+                                    <span><b>Type: </b>Full time</span>
+                                    <span><b>Reference: </b><a href="#" id="Governor_Dinwiddie">Governor Dinwiddie</a></span>                                                      
+                                </div>
+                            </div>
+                            <div class="itemBody clearfix">                        
+                                <ul>
+                                    <li>Warfare</li>
+                                    <li>Horse ridning</li>
+                                    <li>Leadership in battle</li>
+                                </ul>
+                                <div>
+                                    <p>In rhoncus, magna ac venenatis laoreet, lacus nunc rhoncus libero, nec tempus nibh velit vel lectus. Quisque sed iaculis metus. Aenean hendrerit tristique vestibulum. Integer nec nisi commodo arcu posuere pulvinar non nec dui.</p>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionItem"  data-timeline="Commander-in-chief" data-timeline-start-date="1752;1" data-timeline-end-date="1755;3">
+                            <div class="itemHeader clearfix">
+                                <div class="itemTitle">
+                                    <h2 class="appFontColor">Major</h2>
+                                    <span>Ohio</span>
+                                </div>
+                                <div class="itemInfo">
+                                    <span><b>Period: </b>January 1752 - Mars 1755</span>
+                                    <span><b>Type: </b>Part time</span>
+                                    <span><b>Reference: </b><a href="#" id="lord_fairfax">Thomas Lord Fairfax</a></span>
+                                </div>
+                            </div>
+                            <div class="itemBody clearfix">                        
+                                <ul>
+                                    <li>Raising tent</li>
+                                    <li>Infiltration</li>
+                                    <li>Close combat</li>
+                                </ul>
+                                <div>
+                                    <p>Curabitur vehicula, mi at volutpat blandit, enim magna fringilla arcu, convallis elementum diam leo ut eros. Aliquam vel congue orci. Curabitur nec lacus lacus, eu ultricies nibh. Vestibulum sit amet augue est, nec dignissim turpis. Sed dolor quam, gravida eu consectetur nec, dictum ut lorem. Cras ullamcorper mauris pretium eros posuere a eleifend erat suscipit. Sed ac nisi velit.</p>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Education section-->
+                <!--These items is just the same as the ones under work experience section-->
+                <div class="section">
+                    <div class="sectionHeader appBgColor"><h2>Education</h2></div>
+                    <div class="sectionBody">
+                        <div class="sectionItem"  data-timeline="Education2" data-timeline-start-date="1747;6" data-timeline-end-date="1749;9">
+                            <div class="itemHeader clearfix">
+                                <div class="itemTitle">
+                                    <h2 class="appFontColor">Military training</h2>
+                                    <span>Royal Navy</span>
+                                </div>
+                                <div class="itemInfo">
+                                    <span><b>Period: </b>June 1747 - September 1749</span>
+                                    <span><b>Type: </b>Full time</span>
+                                    <span><b>Reference: </b><a href="#" id="lord_fairfax2">Thomas Lord Fairfax</a></span>
+                                </div>
+                            </div>
+                            <div class="itemBody clearfix">                        
+                                <ul>
+                                    <li>Route-march</li>
+                                    <li>Shooting</li>
+                                    <li>Sailing</li>
+                                </ul>
+                                <div>
+                                    <p>Curabitur dignissim nunc vitae ipsum volutpat ultricies. Aenean semper faucibus adipiscing. Pellentesque malesuada ultricies fringilla. Sed placerat cursus justo, eu malesuada massa vestibulum at. Mauris neque metus, ultricies ut iaculis a, tempor eu odio. Fusce at felis leo.</p>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" data-timeline="Education1" data-timeline-start-date="1738;8" data-timeline-end-date="1747;5">
+                            <div class="itemHeader clearfix">
+                                <div class="itemTitle">
+                                    <h2 class="appFontColor">Elementary school</h2>
+                                    <span>Fredericksburg</span>
+                                </div>
+                                <div class="itemInfo">
+                                    <span><b>Period: </b>August 1738 - May 1747</span>
+                                    <span><b>Type: </b>Part time</span>
+                                
+                                </div>
+                            </div>
+                            <div class="itemBody clearfix">                        
+                                <ul>
+                                    <li>Math</li>
+                                    <li>Farming</li>
+                                    <li>Bible</li>
+                                </ul>
+                                <div>
+                                    <p>Duis non nisl eget nulla tempus aliquet. Nulla accumsan ultrices lorem, eget posuere sapien vestibulum vulputate. Mauris nec mollis nisi. In arcu tortor, commodo eget porttitor eget, gravida at arcu.</p>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Skills section-->
+                <div class="section">
+                    <div class="sectionHeader appBgColor"><h2>Skills</h2></div>
+                    <div class="sectionBody">
+
+                        <!--A skill. Just add additional div tags with class=skill of your own choise.-->
+                        <!--Replace the class of the innermost div tag with a class mathing your own skill. Steps of 10 are available for the skill class-->
+                        <div class="skill">
+<!--Skill-->                <h2>War</h2>
+<!--Rating-->               <div class="skillRatingBox"><div class="skillLevel10 appBgColor"></div></div>
+                        </div>                    
+                        <div class="skill">
+                            <h2>Negotiations</h2>
+                            <div class="skillRatingBox"><div class="skillLevel40 appBgColor"></div></div>
+                        </div>
+                        <div class="skill">
+                            <h2>Women</h2>                    
+                            <div class="skillRatingBox"><div class="skillLevel100 appBgColor"></div></div>
+                        </div>            
+                        <div class="skill">
+                            <h2>Dance</h2>        
+                            <div class="skillRatingBox"><div class="skillLevel80 appBgColor"></div></div>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <!--Additional info section-->
+                <div class="section">
+                    <div class="sectionHeader appBgColor"><h2>Additional info</h2></div>
+                    <div class="sectionBody">
+                        <!--Just add whatever you feel the world should know-->
+                        <div class="addInfo">
+<!--Info / Question-->      <h2>Driver's license</h2>
+<!--Answear-->              <div class="addAnswear appBgColor">Yes</div>
+                        </div>
+                        <div class="addInfo">
+                            <h2>Access to a car</h2>
+                            <div class="addAnswear appBgColor">No</div>
+                        </div>
+                        <div class="addInfo">
+                            <h2>Marital status</h2>
+                            <div class="addAnswear appBgColor">Married</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section"></div>
+            </div>
+        </div>
+        
+                        <!--The business card. Add the same info here as in the header -->
+                        <!--This is optional, but if you remove it, also remove it in Main.js. See documentation for further info-->
+                        <div class=" no-print">
+                            <div class="businessCard appBorderColor no-print" id="businessCard">
+<!--Name-->     		        <h2>George Washington</h2>
+<!--Title-->    		        <h3>PRESIDENT CANDIDATE</h3>
+                		        <div class="delimiter"></div>
+<!--Web page-->                 <span>w:<a href="#">myHomepage.com</a></span>
+<!--Mail-->                    	<span>m:<a href="mailto:george.washington@myHomepage.com">george.washington@myHomepage.com</a></span>
+<!--Phone-->			        <span>p: +46 (0)72-553 25 85</span>
+					        </div>
+                        </div>
+				
+		                <!--Markup for the data-timeline. If you change this, them data-timeline plugin might stop working-->
+                        <!--This is optional, but if you remove it, also remove it in Main.js. See documentation for further info-->
+				        <div class="timeline"><div class="startStop"><div class="line"></div><div class="timeMarker appBgColor"></div></div></div>
+                        
+                        <!--This should not be here in production envoirement-->
+                        <!--This is for test purpose to allow you to change application color in the browser-->
+                        <div class="colorPicker" title="Change application color"></div>
+				
+    
+        <!-- Scripts ========================================================================================-->
+        <script src="assets/external/jQuery/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="assets/external/tobPlugins/tobtimelineJS/js/tobtimelineJS.js" type="text/javascript"></script>
+        <script src="assets/external/tobPlugins/tobPopoverJS/js/tobPopoverJS.js" type="text/javascript"></script>
+        <script src="assets/external/colorpicker/js/colorpicker.js" type="text/javascript"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
