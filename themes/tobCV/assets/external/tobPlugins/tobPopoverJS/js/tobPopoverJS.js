@@ -27,7 +27,9 @@
             // Calculate and set the left offset so that the popover arrow points to the end of the anchor link
             var anchorLeft = $(anchorLink).position().left;
             var containerLeft = $(popoverContainer).position().left;
-            var leftOffset = anchorLeft - containerLeft + $(anchorLink).width()-10;
+            var leftOffset = anchorLeft - containerLeft + $(anchorLink).width() - 10;
+            if (ie7())
+                leftOffset -= 602;
             $(popoverContainer).css('left', leftOffset);
 
             // Offset popover from bottom. Move it half its height - parents top, bottom padding            
@@ -81,5 +83,16 @@ function CreateCardContent(cardContent, borderColor){
     content += '<div class="arrow" style="border-right-color:' + borderColor + '"></div></div>';
 
     return content;
+}
+
+function ie7() {
+    
+    var version = 999; // we assume a sane browser
+    if (navigator.appVersion.indexOf("MSIE") != -1)
+        // bah, IE again, lets downgrade version number
+        version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    if (version <= 7)
+        return true;
+    return false;        
 }
 
