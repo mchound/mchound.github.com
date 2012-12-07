@@ -1,25 +1,29 @@
 $(function(){
 	
-    colorPickerOptions = {
-        onChange: function (hsb, hex, rgb) {
-            ChangeAppColor(hex);
-        }
-    };
+    var mq = window.matchMedia("(max-width: 1024px)");
 
-    $('.colorPicker').ColorPicker(colorPickerOptions);
+    if (!mq.matches) {
+        colorPickerOptions = {
+            onChange: function (hsb, hex, rgb) {
+                ChangeAppColor(hex);
+            }
+        };
 
-    // show/hide business card on scroll event
-	$(window).scroll(function(){
-		if(scrollPos = $(document).scrollTop() >= 250 ){
-			$('#businessCard').fadeIn('slow', function(){});
-		}
-		else{
-			$('#businessCard').fadeOut('slow', function(){});
-		}		
-	});
-	
-    // Initialize timeline plugin
-	$(".mainBody").timeline();
+        $('.colorPicker').ColorPicker(colorPickerOptions);
+
+        // show/hide business card on scroll event
+        $(window).scroll(function () {
+            if (scrollPos = $(document).scrollTop() >= 250) {
+                $('#businessCard').fadeIn('slow', function () { });
+            }
+            else {
+                $('#businessCard').fadeOut('slow', function () { });
+            }
+        });
+
+        // Initialize timeline plugin
+        $(".mainBody").timeline();
+    }
 
     // Initialize popover plugin
 	$('#Napoleon').popover({

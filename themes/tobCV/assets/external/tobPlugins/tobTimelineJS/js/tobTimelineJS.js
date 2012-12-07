@@ -10,6 +10,7 @@
 				var span;
 				var totalMonthCount = 0;
 				var pxPerMonth;
+				var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 				
                 // Search DOM for engagement with attribute 'timeline'
 				$.each($(this).find('[data-timeline]'), function(index, domElement){
@@ -50,7 +51,7 @@
 					else{
 					    this.$mileStoneMarker.addClass('engagementMarker odd');
 					}
-					this.$mileStoneMarker.append('<a href="#' + milestone.label + '" class="milestoneLink">' + milestone.startYear + '-' + milestone.startMonth + '</a>');
+					this.$mileStoneMarker.append('<a href="#' + milestone.label + '" class="milestoneLink" title="' + milestone.label + '">' + month[milestone.startMonth - 1] + ', ' + milestone.startYear + '</a>');
 					milestone.marginRight = parseInt(milestone.monthSpan * pxPerMonth-53);
 					this.$mileStoneMarker.css('margin-right', milestone.marginRight);
 					

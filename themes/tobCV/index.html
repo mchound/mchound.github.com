@@ -4,8 +4,8 @@
 <head>
     <!-- Meta Data ===================================================================================-->
 	<!-- =============================================================================================-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" /> 
+    <meta charset="utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets =================================================================================-->
 	<!-- =============================================================================================-->
 	<link href="assets/external/tobPlugins/tobTimelineJS/css/style.css" rel="stylesheet" />    
@@ -31,7 +31,8 @@
     </script>
 </head>
 <body>
-
+        
+        
         <!--Container for all content-->
         <div class="container">
 
@@ -94,7 +95,7 @@
 
                         <!--Item for work experience and education-->
                         <!--Add data-timeline attributes if you want to use the data-timeline-->
-                        <div class="sectionItem" data-timeline="Work2" data-timeline-start-date="1789;4"  data-timeline-end-date="1797;6">
+                        <div class="sectionItem" data-timeline="President, United states of America" data-timeline-start-date="1789;4"  data-timeline-end-date="1797;6">
                             <div class="itemHeader clearfix">
                                 <div class="itemTitle">
 <!--Title-->                        <h2 class="appFontColor">President</h2>
@@ -121,7 +122,7 @@
                         </div>
 
                         <!--Another work experience item, just append more like this to fullfill your resumé-->
-                        <div class="sectionItem"  data-timeline="Work1" data-timeline-start-date="1755;4" data-timeline-end-date="1789;3">
+                        <div class="sectionItem"  data-timeline="Commander in Chief, Virginia" data-timeline-start-date="1755;4" data-timeline-end-date="1789;3">
                             <div class="itemHeader clearfix">
                                 <div class="itemTitle">
                                     <h2 class="appFontColor">Commander in Chief</h2>
@@ -144,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sectionItem"  data-timeline="Commander-in-chief" data-timeline-start-date="1752;1" data-timeline-end-date="1755;3">
+                        <div class="sectionItem"  data-timeline="Major, Ohio" data-timeline-start-date="1752;1" data-timeline-end-date="1755;3">
                             <div class="itemHeader clearfix">
                                 <div class="itemTitle">
                                     <h2 class="appFontColor">Major</h2>
@@ -175,7 +176,7 @@
                 <div class="section">
                     <div class="sectionHeader appBgColor"><h2>Education</h2></div>
                     <div class="sectionBody">
-                        <div class="sectionItem"  data-timeline="Education2" data-timeline-start-date="1747;6" data-timeline-end-date="1749;9">
+                        <div class="sectionItem"  data-timeline="Military training, Royal Navy" data-timeline-start-date="1747;6" data-timeline-end-date="1749;9">
                             <div class="itemHeader clearfix">
                                 <div class="itemTitle">
                                     <h2 class="appFontColor">Military training</h2>
@@ -198,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sectionItem" data-timeline="Education1" data-timeline-start-date="1738;8" data-timeline-end-date="1747;5">
+                        <div class="sectionItem" data-timeline="Elementary School, Fredricksburg" data-timeline-start-date="1738;8" data-timeline-end-date="1747;5">
                             <div class="itemHeader clearfix">
                                 <div class="itemTitle">
                                     <h2 class="appFontColor">Elementary school</h2>
@@ -276,7 +277,7 @@
         
                         <!--The business card. Add the same info here as in the header -->
                         <!--This is optional, but if you remove it, also remove it in Main.js. See documentation for further info-->
-                        <div class=" no-print">
+                        <div class="no-print">
                             <div class="businessCard appBorderColor no-print" id="businessCard">
 <!--Name-->     		        <h2>George Washington</h2>
 <!--Title-->    		        <h3>PRESIDENT CANDIDATE</h3>
@@ -289,11 +290,11 @@
 				
 		                <!--Markup for the data-timeline. If you change this, them data-timeline plugin might stop working-->
                         <!--This is optional, but if you remove it, also remove it in Main.js. See documentation for further info-->
-				        <div class="timeline"><div class="startStop"><div class="line"></div><div class="timeMarker appBgColor"></div></div></div>
+				        <div class="timeline only-desktop"><div class="startStop"><div class="line"></div><div class="timeMarker appBgColor"></div></div></div>
                         
                         <!--This should not be here in production envoirement-->
                         <!--This is for test purpose to allow you to change application color in the browser-->
-                        <div class="colorPicker" title="Change application color"></div>
+                        <div class="colorPicker only-desktop" title="Change application color"></div>
 				
     
         <!-- Scripts ========================================================================================-->
