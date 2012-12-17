@@ -1,6 +1,8 @@
 $(function(){
 	
-    var mq = window.matchMedia("(max-width: 1024px)");
+    var mq = false;
+    if (window.matchMedia == 'function')
+        mq = window.matchMedia("(max-width: 1024px)");    
 
     if (!mq.matches) {
         colorPickerOptions = {
