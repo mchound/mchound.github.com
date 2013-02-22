@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>    
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/sammy-0.7.4.min.js"></script>
+    <script src="Scripts/knockout-2.2.1.debug.js"></script>
+    <script src="Scripts/knockout.mapping-latest.js"></script>
+    <script src="Scripts/knockout.validation.debug.js"></script>
+    <script src="assets/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="logo">justGolf</span>
+        </div>
+        <div class="nav">
+            <a href="#/start" class="button" data-bind="css: { active: view() == 'start' }"><i class="home"></i>Home</a>            
+            <a href="#/play" class="button" data-bind="css: { active: view() == 'play' }"><i class="globe"></i>Play</a>
+            <a href="#/stats" class="button" data-bind="css: { active: view() == 'stats' }"><i class="chart"></i>Stats</a>
+            <a href="#/settings" class="button" data-bind="css: { active: view() == 'settings' }"><i class="settings"></i>Settings</a>
+        </div>
+
+        <div class="content">
+            <div data-bind="template: { name: function() { return view(); }, data: $root }"></div>
+        </div>
+
+        <div class="footer"></div>
+
+        <!--Sign in form-->
+        <script type="text/html" id="signIn">
+            <form data-bind="submit: signIn.submit" action="#/signIn" method="post">
+                <label for="email">Email</label>
+                <input type="text" name="email" data-bind="value: signIn.email" />
+                <label for="password">Password</label>
+                <input type="password" name="password" data-bind="value: signIn.password" />
+                <button type="submit" class="green">Sign in</button>
+            </form>
+            <a href="#/signUp" class="button blue">No account? Sign up!</a>
+        </script>
+
+        <!--Sign up form-->
+        <script type="text/html" id="signUp">
+            <p>Congratulations! You are a fex steps from an account of your own. Once registered yuo can play all your favourite courses, even withou internet connetion. Just make sure you download and save the courses at the time you have a connection</p>
+            <ul data-bind="foreach: signUpValidation.errors(), visible: signUpsubmittedOnce()" class="error">
+                <li data-bind="text: $data"></li>
+            </ul>
+            <form data-bind="submit: signUp.submit" action="#/signUp" method="post">
+                <label for="email">Email</label>
+                <input type="text" name="email" data-bind="value: signUp.email" />
+                <label for="password">Password</label>
+                <input type="password" name="password" data-bind="value: signUp.password" />
+                <button type="submit" class="green">Register</button>
+            </form>            
+        </script>
+
+        <!--Start screen-->
+        <script type="text/html" id="start">
+            Start
+        </script>
+
+        <!--Play screen-->
+        <script type="text/html" id="play">
+            Play
+        </script>
+
+        <!--Stats screen-->
+        <script type="text/html" id="stats">
+            Play
+        </script>
+
+        <!--Settings screen-->
+        <script type="text/html" id="settings">
+            Settings
+        </script>
+    
+    </div>
+
+</body>
+</html>
